@@ -58,7 +58,7 @@ if uploaded_file:
     if st.button('Run'):    
         
         st.header("Predicting...")
-        with open('serialized_model_AED_all_data.json', 'r') as fin:
+        with open('serialized_model_AED_all_data_feb21.json', 'r') as fin:
             model = model_from_json(fin.read())  # Load model
             
         preds=model.predict(data)
